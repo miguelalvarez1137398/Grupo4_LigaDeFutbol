@@ -28,4 +28,8 @@ public class Equipo {
     public List<Jugador> getJugadores() {
         return jugadores;
     }
+
+    public void agregarJugador(Jugador jugador) {
+        this.jugadores.add(jugador);
+    }
 }

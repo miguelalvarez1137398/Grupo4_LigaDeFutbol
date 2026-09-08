@@ -1,0 +1,49 @@
+package src.model.domain;
+
+import java.time.LocalDate;
+
+public class Partido {
+    private LocalDate fecha;
+    private String resultado;
+    private Equipo equipoLocal;
+    private Equipo equipoVisitante;
+
+    public Partido(LocalDate fecha, String resultado, Equipo equipoLocal, Equipo equipoVisitante) {
+        this.fecha = fecha;
+        this.resultado = resultado;
+        this.equipoLocal = equipoLocal;
+        this.equipoVisitante = equipoVisitante;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
+    }
+
+    public Equipo getEquipoLocal() {
+        return equipoLocal;
+    }
+
+    public void setEquipoLocal(Equipo equipoLocal) {
+        this.equipoLocal = equipoLocal;
+    }
+
+    public Equipo getEquipoVisitante() {
+        return equipoVisitante;
+    }
+
+    public void setEquipoVisitante(Equipo equipoVisitante) {
+        this.equipoVisitante = equipoVisitante;
+    }
+}

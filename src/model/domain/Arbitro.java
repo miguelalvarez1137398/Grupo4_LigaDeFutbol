@@ -23,7 +23,6 @@ public class Arbitro extends Persona {
 
     @Override
     public String datosResumen() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'datosResumen'");
+        return "Árbitro: " + getNombre() + " - Categoría: " + categoria;
     }
 }

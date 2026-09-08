@@ -49,12 +49,10 @@ public class Jugador extends Persona {
     @Override
     public String rolEnPartido() {
         return "Jugador [Camiseta: " + numeroCamiseta + ", Posición: " + posicion + ", Goles Totales: " + golesTotales + ", " + datosResumen() + "]";
-    }
+    }    
 
     @Override
     public String datosResumen() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'datosResumen'");
+        return "Jugador: " + getNombre() + " - Posición: " + posicion;
     }
-    
 }
